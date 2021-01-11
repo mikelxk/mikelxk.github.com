@@ -2,44 +2,104 @@
 title: Hexo设置
 date: 2021-01-12 02:10:50
 tags:
-- 设置
-- Hexo
-- Next
+  - 设置
+  - Hexo
+  - Next
 categories:
-- 设置
+  - 设置
 ---
-### Next设置
+
+### 前言
+
+一些 Next on Hexo 的初步设置，包括 github banner 和 emoji
+
+### Next 设置
+
 首先安装 [next-theme](https://theme-next.org/)
+
 ```bash
 npm i hexo-theme-next
 ```
-在_config.yml中：
+
+在\_config.yml 中：
+
 ```yaml
 theme: next
 ```
+
 将
-Next主题的设置需要在根目录上面新建一个_config.[主题名].yml的文件，该文件会覆盖默认的文件。使用
-``` bash
+Next 主题的设置需要在根目录上面新建一个\_config.[主题名].yml 的文件，该文件会覆盖默认的文件。使用
+
+```bash
 # Installed through npm
 cp node_modules/hexo-theme-next/_config.yml _config.next.yml
 # Installed through Git
 cp theme/next/_config.yml _config.next.yml
 ```
-将默认的theme拷贝过来：[参见](https://theme-next.js.org/docs/getting-started/configuration)
-### 我的设置
-- 将github banner打开
+
+将默认的 theme 拷贝过来：[参见](https://theme-next.js.org/docs/getting-started/configuration)
+
+### 我的一些设置
+
+- 将 github banner 打开(in `_config.next.yml`)
+
 ```yaml
 github_banner:
   enable: true
   permalink: https://github.com/mikelxk
   title: Follow me on GitHub
 ```
-- 将minify设置为true
+
+- 将 minify 设置为 true
+
 ```yaml
 minify: true
 ```
-- 使得hexo server自动打开网页(in package.json)
+
+- 使得 hexo server 自动打开网页(in `package.json`)
+
 ```json
 "run": "hexo server -o"
 ```
-添加-o 至命令行来直接打开url
+
+添加-o 至命令行来直接打开 url
+
+### 我的插件
+
+- 使用[pretty quick](https://prettier.io/docs/en/precommit.html)添加 pre-commit hook
+
+```bash
+npm i pretty-quick husky
+```
+
+在 `package.json`中添加
+
+```json
+{
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
+```
+
+- 使用 hexo-filter-github-emojis 来添加 emoji
+
+```bash
+npm i hexo-filter-github-emojis
+```
+
+在`_config.yml`中：
+
+```yaml
+emoji:
+  enable: true
+  className: github-emoji
+  styles:
+  customEmojis:
+```
+
+[参见](https://www.npmjs.com/package/hexo-filter-github-emojis)
+
+第一篇水完了 逃（ :running:

@@ -98,6 +98,12 @@ ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+githubEmojis:
+  enable: true
+  className: github-emoji
+  inject: true
+  styles:
+  customEmojis:
 ## Themes: https://hexo.io/themes/
 theme: next
 

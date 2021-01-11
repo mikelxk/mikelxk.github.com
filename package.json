@@ -9,11 +9,17 @@
     "server": "hexo server",
     "run": "hexo server -o"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
   "hexo": {
     "version": "5.3.0"
   },
   "dependencies": {
     "hexo": "^5.3.0",
+    "hexo-filter-github-emojis": "^3.0.4",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-index": "^2.0.0",
@@ -23,6 +29,8 @@
     "hexo-renderer-stylus": "^2.0.0",
     "hexo-server": "^2.0.0",
     "hexo-theme-landscape": "^0.0.3",
-    "hexo-theme-next": "^8.2.0"
+    "hexo-theme-next": "^8.2.0",
+    "husky": "^4.3.7",
+    "pretty-quick": "^3.1.0"
   }
 }

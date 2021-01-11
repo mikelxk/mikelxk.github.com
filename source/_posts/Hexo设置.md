@@ -11,7 +11,7 @@ categories:
 
 ## 前言
 
-一些 Next on Hexo 的初步设置，包括 github banner 和 emoji
+一些 Next on Hexo 的初步设置，包括 github banner 和 emoji :smile:
 
 ## Next 设置
 
@@ -27,8 +27,7 @@ npm i hexo-theme-next
 theme: next
 ```
 
-将
-Next 主题的设置需要在根目录上面新建一个\_config.[主题名].yml 的文件，该文件会覆盖默认的文件。使用
+将 Next 主题的设置需要在根目录上面新建一个\_config.[主题名].yml 的文件，该文件会覆盖默认的文件。使用
 
 ```bash
 # Installed through npm

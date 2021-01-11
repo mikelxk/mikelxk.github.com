@@ -11,7 +11,7 @@ categories:
 
 ## 前言
 
-一些 Next on Hexo 的初步设置，包括 github banner 和 emoji :smile:
+一些 Next on Hexo 的初步设置，包括 Github banner :octocat:和 Emoji :smile:
 
 ## Next 设置
 
@@ -55,6 +55,29 @@ github_banner:
 minify: true
 ```
 
+- 添加目录索引和图标
+
+in `_config.next.yml`:
+
+```yaml
+menu:
+  home: / || fa fa-home
+  about: /about/ || fa fa-user
+  tags: /tags/ || fa fa-tags
+  categories: /categories/ || fa fa-th
+  archives: /archives/ || fa fa-archive
+```
+
+然后在`source`下建立`/tags`和`/categories`, 其他的目录是自带的(`/about`自己写的)
+
+在每个目录下面建立`index.md`, 例如`/tags`下就是:
+```
+---
+title: tags
+date: 2021-01-12 02:10:50
+type: "tags"
+---
+```
 - 使得 hexo server 自动打开网页(in `package.json`)
 
 ```json

@@ -9,11 +9,11 @@ categories:
   - 设置
 ---
 
-### 前言
+## 前言
 
 一些 Next on Hexo 的初步设置，包括 github banner 和 emoji
 
-### Next 设置
+## Next 设置
 
 首先安装 [next-theme](https://theme-next.org/)
 
@@ -39,7 +39,7 @@ cp theme/next/_config.yml _config.next.yml
 
 将默认的 theme 拷贝过来：[参见](https://theme-next.js.org/docs/getting-started/configuration)
 
-### 我的一些设置
+## 我的一些设置
 
 - 将 github banner 打开(in `_config.next.yml`)
 
@@ -64,7 +64,7 @@ minify: true
 
 添加-o 至命令行来直接打开 url
 
-### 我的插件
+## 我的插件
 
 - 使用[pretty quick](https://prettier.io/docs/en/precommit.html)添加 pre-commit hook
 

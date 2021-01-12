@@ -9,11 +9,11 @@ categories:
   - 设置
 ---
 
-## 前言
+# 前言
 
 一些 Next on Hexo 的初步设置，包括 Github banner :octocat:和 Emoji :smile:
 
-## Next 设置
+# Next 设置
 
 首先安装 [next-theme](https://theme-next.org/)
 
@@ -21,7 +21,7 @@ categories:
 npm i hexo-theme-next
 ```
 
-在\_config.yml 中：
+`_config.yml`：
 
 ```yaml
 theme: next
@@ -38,9 +38,11 @@ cp theme/next/_config.yml _config.next.yml
 
 将默认的 theme 拷贝过来：参见: https://theme-next.js.org/docs/getting-started/configuration
 
-## 我的一些设置
+# 我的设置
 
-- 打开 github banner(in `_config.next.yml`)
+#### 打开 Github banner
+
+`_config.next.yml`:
 
 ```yaml
 github_banner:
@@ -49,15 +51,13 @@ github_banner:
   title: Follow me on GitHub
 ```
 
-- 将 minify 设置为 true
+#### 将 minify 设置为 true
 
 ```yaml
 minify: true
 ```
 
-- 添加目录索引和图标
-
-in `_config.next.yml`:
+#### 添加目录索引和图标
 
 ```yaml
 menu:
@@ -68,10 +68,11 @@ menu:
   archives: /archives/ || fa fa-archive
 ```
 
-然后在`source`下建立`/tags`和`/categories`, 其他的目录是自带的(`/about`自己写的)
+然后在`source`下建立`/tags`和`/categories`, 其他的目录是自带的(`/about`要自己写)
 
 在每个目录下面建立`index.md`, 例如`/tags`下就是:
 
+`index.md`:
 ```
 ---
 title: tags
@@ -79,8 +80,12 @@ date: 2021-01-12 02:10:50
 type: "tags"
 ---
 ```
+
 参见：https://theme-next.js.org/docs/theme-settings/
-- 使得 hexo server 自动打开网页(in `package.json`)
+
+#### 使得 hexo server 自动打开网页
+
+`package.json`：
 
 ```json
 "run": "hexo server -o"
@@ -88,15 +93,15 @@ type: "tags"
 
 添加-o 至命令行来直接打开 url
 
-## 我的插件
+# 我的插件
 
-- 使用[pretty quick](https://prettier.io/docs/en/precommit.html)添加 pre-commit hook
+#### 使用[pretty quick](https://prettier.io/docs/en/precommit.html)添加 pre-commit hook
 
 ```bash
 npm i pretty-quick husky
 ```
 
-在 `package.json`中添加
+`package.json`:
 
 ```json
 {
@@ -114,7 +119,7 @@ npm i pretty-quick husky
 npm i hexo-filter-github-emojis
 ```
 
-在`_config.yml`中：
+`_config.yml`：
 
 ```yaml
 emoji:

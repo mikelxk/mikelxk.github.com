@@ -15,17 +15,23 @@ categories:
 
 # Next 设置
 
+## 安装
+
 首先安装 [next-theme](https://theme-next.org/)
 
 ```bash
 npm i hexo-theme-next
 ```
 
+## 应用主题
+
 `_config.yml`：
 
 ```yaml
 theme: next
 ```
+
+## 复制 Next 设置
 
 将 Next 主题的设置需要在根目录上面新建一个\_config.[主题名].yml 的文件，该文件会覆盖默认的文件。使用
 

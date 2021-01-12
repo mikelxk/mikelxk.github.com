@@ -40,7 +40,7 @@ cp theme/next/_config.yml _config.next.yml
 
 # 我的设置
 
-#### 打开 Github banner
+## 打开 Github banner
 
 `_config.next.yml`:
 
@@ -51,13 +51,13 @@ github_banner:
   title: Follow me on GitHub
 ```
 
-#### 将 minify 设置为 true
+## 将 minify 设置为 true
 
 ```yaml
 minify: true
 ```
 
-#### 添加目录索引和图标
+## 添加目录索引和图标
 
 ```yaml
 menu:
@@ -73,6 +73,7 @@ menu:
 在每个目录下面建立`index.md`, 例如`/tags`下就是:
 
 `index.md`:
+
 ```
 ---
 title: tags
@@ -83,7 +84,7 @@ type: "tags"
 
 参见：https://theme-next.js.org/docs/theme-settings/
 
-#### 使得 hexo server 自动打开网页
+## 使得 hexo server 自动打开网页
 
 `package.json`：
 
@@ -95,7 +96,7 @@ type: "tags"
 
 # 我的插件
 
-#### 使用[pretty quick](https://prettier.io/docs/en/precommit.html)添加 pre-commit hook
+## 使用[pretty quick](https://prettier.io/docs/en/precommit.html)添加 pre-commit hook
 
 ```bash
 npm i pretty-quick husky
@@ -113,7 +114,7 @@ npm i pretty-quick husky
 }
 ```
 
-- 使用 hexo-filter-github-emojis 来添加 emoji
+## 使用 hexo-filter-github-emojis 来添加 emoji
 
 ```bash
 npm i hexo-filter-github-emojis

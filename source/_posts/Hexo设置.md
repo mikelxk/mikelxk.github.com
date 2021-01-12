@@ -36,11 +36,11 @@ cp node_modules/hexo-theme-next/_config.yml _config.next.yml
 cp theme/next/_config.yml _config.next.yml
 ```
 
-将默认的 theme 拷贝过来：[参见](https://theme-next.js.org/docs/getting-started/configuration)
+将默认的 theme 拷贝过来：参见: https://theme-next.js.org/docs/getting-started/configuration
 
 ## 我的一些设置
 
-- 将 github banner 打开(in `_config.next.yml`)
+- 打开 github banner(in `_config.next.yml`)
 
 ```yaml
 github_banner:
@@ -71,6 +71,7 @@ menu:
 然后在`source`下建立`/tags`和`/categories`, 其他的目录是自带的(`/about`自己写的)
 
 在每个目录下面建立`index.md`, 例如`/tags`下就是:
+
 ```
 ---
 title: tags
@@ -78,6 +79,7 @@ date: 2021-01-12 02:10:50
 type: "tags"
 ---
 ```
+参见：https://theme-next.js.org/docs/theme-settings/
 - 使得 hexo server 自动打开网页(in `package.json`)
 
 ```json
@@ -122,6 +124,6 @@ emoji:
   customEmojis:
 ```
 
-[参见](https://www.npmjs.com/package/hexo-filter-github-emojis)
+参见: https://www.npmjs.com/package/hexo-filter-github-emojis
 
-第一篇水完了 逃（ :running:
+第一篇水完了 逃） :running:

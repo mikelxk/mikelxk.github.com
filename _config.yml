@@ -9,7 +9,9 @@ description: ""
 keywords:
 author: Mike
 email: mike.lxk@gmail.com
-language: en
+language:
+  - zh-CN
+  - en
 timezone: Asia/Shanghai
 
 # URL

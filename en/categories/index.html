@@ -30,7 +30,7 @@
 <meta property="og:site_name" content="Mike&#39;s blog">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-01-11T18:10:50.000Z">
-<meta property="article:modified_time" content="2021-01-12T14:28:17.908Z">
+<meta property="article:modified_time" content="2021-01-23T12:14:23.126Z">
 <meta property="article:author" content="Mike">
 <meta name="twitter:card" content="summary">
 
@@ -278,6 +278,11 @@
     
 
 
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -355,6 +360,37 @@
 
 
 
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://https-mikelxk-github-io.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://mikelxk.github.io/en/categories/index.html";
+    this.page.identifier = "en/categories/index.html";
+    this.page.title = "Categories";
+    };
+  NexT.utils.loadComments('#disqus_thread', () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://https-mikelxk-github-io.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
 
 </body>
 </html>

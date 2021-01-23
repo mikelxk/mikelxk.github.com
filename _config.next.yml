@@ -556,8 +556,8 @@ comments:
 # Disqus
 # For more information: https://disqus.com
 disqus:
-  enable: false
-  shortname:
+  enable: true
+  shortname: https-mikelxk-github-io
   count: true
 
 # DisqusJS

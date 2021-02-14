@@ -5,3 +5,9 @@ type: about
 ---
 
 # 关于我
+
+## 近况
+
+目前就读于佛罗里达大学(University of Florida)本科CS
+
+## 

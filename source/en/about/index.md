@@ -5,3 +5,7 @@ type: about
 ---
 
 # About Me
+
+## Recent situation
+
+Currently a CS undergrad at Univeristy of FLorida

@@ -255,6 +255,7 @@ p {
 a {
   border-bottom: 1px solid #999;
   color: var(--link-color);
+  cursor: pointer;
   outline: 0;
   text-decoration: none;
   overflow-wrap: break-word;
@@ -2982,7 +2983,7 @@ mark.search-keyword {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #c1dd9c;
+  background: #ff0f41;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);

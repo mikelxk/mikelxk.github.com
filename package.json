@@ -31,7 +31,7 @@
     "hexo-server": "^2.0.0",
     "hexo-theme-landscape": "^0.0.3",
     "hexo-theme-next": "^8.2.0",
-    "husky": "^4.3.7",
+    "husky": "^5.0.9",
     "pretty-quick": "^3.1.0"
   }
 }
